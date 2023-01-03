@@ -14,3 +14,12 @@ var wordBank = [
 
     }
 ]
+
+
+function counter() {
+    var wins = w;
+    var losses = l;
+    for (let w = 0; w < winCount; w++) {
+        for (let l = 0; l < lossCount; l++) {
+
+}
