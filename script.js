@@ -1,4 +1,5 @@
 var startButton = document.getElementById("start");
+
 /* 
 pseudo-code
 
@@ -24,6 +25,16 @@ function startGame() {
     }, 1000);
   }
   timer()
+}
+
+function compare(userWord, word, win, loss){
+    /*if (word === userWord){
+        increment the score
+    }else if (word !== userWord{
+        increment the loss
+    }else {
+        "please make a guess"
+    }*/
 }
 
 // I want the timer to start counting down when the start button is pressed
