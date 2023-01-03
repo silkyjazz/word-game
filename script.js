@@ -1,3 +1,4 @@
+var startButton = document.getElementById("start")
 /* 
 pseudo-code
 
@@ -14,3 +15,8 @@ var wordBank = [
 
     }
 ]
+
+
+// I want the timer to start counting down when the start button is pressed
+
+startButton.addEventListener("click", timer());
