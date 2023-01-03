@@ -1,3 +1,4 @@
+var startButton = document.getElementById("start")
 /* 
 pseudo-code
 
@@ -7,6 +8,7 @@ i want an input field to enter
 var timerText = document.getElementById("timerText") 
 
 function timer(){
+    
     var secondsLeft = 60
     var setTimer = setInterval(function (){
         secondsLeft--
@@ -18,4 +20,8 @@ function timer(){
     }, 1000)
 }
 
-timer()
+
+
+// I want the timer to start counting down when the start button is pressed
+
+startButton.addEventListener("click", timer());
