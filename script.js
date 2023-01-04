@@ -6,15 +6,27 @@ pseudo-code
 */
 var timerText = document.getElementById("timerText");
 var wordText = document.getElementById("wordText");
-var wordBank = ["cat", "fish", "bird"];
+var winText = document.getElementById("win");
+var loseText = document.getElementById("lose");
+var wordBank = ["cheese","hippopotamus","submarine", "programmer"];
+
+var userInput = []
+var wordIndex = ""
+var wins = 0
+var lose = 0
 
 wordText.innerHTML = wordBank[0];
 function startGame() {
  
+    function newWord (){
+    var chosenWord = Math.floor(Math.random() * wordBank.length)
+    console.log(chosenWord) 
+    }
+   
+
 
   function timer() {
-    console.log("hello");
-    var secondsLeft = 60;
+    var secondsLeft = 15;
     var setTimer = setInterval(function () {
       secondsLeft--;
       timerText.textContent = "Time left: " + secondsLeft;
@@ -27,11 +39,8 @@ function startGame() {
   timer()
 }
 
-function compare(userWord, word, win, loss){
-    var userWord = input.value;
 
-    userWord.innerHTML = userWord
-  
+function compare(){
     /*if (word === userWord){
         increment the score
     }else if (word !== userWord{
