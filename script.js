@@ -1,5 +1,4 @@
 var startButton = document.getElementById("start");
-
 /* 
 pseudo-code
 
@@ -39,17 +38,45 @@ function startGame() {
   timer()
 }
 
+/* function compare(userWord, word, win, loss){
+    var userWord = input.value;
 
-function compare(){
-    /*if (word === userWord){
+    userWord.innerHTML = userWord
+  
+    if (word === userWord){
         increment the score
     }else if (word !== userWord{
         increment the loss
     }else {
         "please make a guess"
-    }*/
+    
 }
-compare()
+compare() 
+*/
+
+// I want a function that prompts the user to type the rest of letters to guess the full word
+function guessWorld(word){
+  // prompt the user to fill in the rest of the word
+  var inputElement = document.getElementById("input");
+  inputElement.value = "t_s_";
+  // inputElement.textContent = "Please enter your guessed word here"
+
+  // check if the guess is correct
+  if(inputElement.value === "word"){
+    console.log("You got it right!");
+  }
+  else{
+    console.log("Sorry, that's not correct. Try again");
+  }
+
+  // Render the guess to the webpage
+  // var inputElement = document.getElementById("input");
+  // outputElement.textContent = guess;
+
+}
+guessWorld("test");
+
+
 // I want the timer to start counting down when the start button is pressed
 
 startButton.addEventListener("click", startGame);
